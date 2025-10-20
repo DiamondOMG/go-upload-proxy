@@ -117,7 +117,7 @@ func getHeaderWithDefault(r *http.Request, key, defaultValue string) string {
 
 func main() {
 	// ตั้งค่า Route
-	http.HandleFunc("/upload", corsMiddleware(uploadHandler))
+	http.HandleFunc("/upload-go", corsMiddleware(uploadHandler))
 
 	// Start Server
 	addr := fmt.Sprintf(":%d", PORT)
